@@ -1,0 +1,27 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+div img {
+  width: 300px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  display: flex;
+}
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .container {
+    flex-direction: row;
+  }
+  .row {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+}
